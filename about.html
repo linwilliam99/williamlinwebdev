@@ -1,0 +1,362 @@
+<html lang="en">
+  <head>
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>SDG6</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+        sectionimage {
+            background-image: url('https://cdn.shopify.com/s/files/1/1143/5524/files/clean-water_grande.jpg?5796659231253631405');
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">This website is dedicated to informing the public of the importance of clean and accessible water for all. Areas like Sub-Saharan Africa have low rates of clean and affordable water leading to an increase in health risk</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Pages</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="about.html" class="text-white">About</a></li>
+            <li><a href="page3.html" class="text-white">Take Action</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+       
+        <strong>SDG6 Home</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    </body>
+    <style>   
+
+    
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  min-width: 1000px;
+  min-height: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+    
+        .row {
+            display: flex;
+        }
+        .column {
+            flex:33.33%;
+            padding 10px;
+        }
+    
+
+        #parent {
+    width:600px;
+    height:600px;
+    border:1px solid #000;
+    overflow:auto;
+}
+        
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+.columns {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+        
+</style>
+
+    
+<head>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+    
+     <script src="sdg6.json"></script>
+
+    
+
+    
+   
+</head>
+<body>
+    <br>
+    
+    
+    <center><h2> There are 663 million people on the planet who don’t have access to clean water.</h2><br> <h2>That’s nearly 1 in 10 people worldwide.</h2></center>
+    <br>
+    
+<div class="row">
+    <div class = "column">
+        <center>
+        <h3>Visual Map</h1>
+        <h4>% of Deaths from Unsafe Water</h2>
+  <iframe src="https://ourworldindata.org/grapher/share-deaths-unsafe-water" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+<p>  SDG 6.1 emphasizes the need to achieve universal and equitable access to safe and affordable drinking water for all. Universal allows for the geographical equality in that every part of the world should have access to sanitized and safe drinking water. Equitability on the other hand focuses on making the drinking water available and affordable for everyone no matter what conditions may be present.  
+</p></center>
+    </div>
+    </div>
+     
+    
+       
+           
+
+ 
+
+
+
+         
+
+    
+<head>
+        <script src="sdg6.json"></script>
+    </head>
+    
+    <body>
+           <center>
+        <div class ="column">
+        <h1>Country Data</h1>
+        <h2>% of Clean Water</h2>
+        Country: <input type="text" id="ebox" placeholder="Country name..">
+        
+        <button onclick="searchIt()" class="button">Submit</button>
+        
+        <button onclick="resetIt()" class="button">Reset Graph</button>
+        
+</div>
+        <div id="mydata"></div>
+        <div id ="parent">
+     <canvas id="myCanvas" width="600" height="1300" style="border:1px solid #d3d3d3;"></canvas>
+               </div>
+                   </center>
+        <script>
+             
+          
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d"); 
+            var timesdraw = 0;
+            var y = 10;
+            var r = 5;
+            var t = 25;
+            
+            
+            function searchIt() {
+                resetIt();
+                var eboxtext = document.getElementById("ebox").value;
+                for (i = 0; i<data.length; i++) {
+                    if (eboxtext === data[i]['GeoAreaName']) {
+                    if (timesdraw != 0) {y = y + 30} {
+                        ctx.fillStyle="blue";
+                        ctx.fillRect(0,y,data[i]['Value']*3.5,20);
+                        ctx.font = "15px Arial";
+                        ctx.fillText(data[i]['GeoAreaName']+": "+data[i]['Value']+"%"+" "+"("+data[i]['TimePeriod']+")",data[i]['Value']*3.5+r,t)
+                                timesdraw = timesdraw + 1
+                                t = t + 30
+                    }
+                }
+            }
+        }
+        function resetIt() {
+                timesdraw = 0;
+                y = 10;
+                r = 5;
+                t = 25;
+                const context = c.getContext('2d');
+                context.clearRect(0, 0, c.width, c.height);
+                context.canvas.width = context.canvas.width;
+           
+
+            }
+             
+        
+            
+        </script>
+        
+            <br>
+<h1>______________________________________________________________________________________</h1>
+    <br>
+        
+    
+        <center><h2>Graphs + Figures for More Info</h2></center> <br>
+        <div class="row">
+  <div class="columns">
+      <img src="graph.jpg">
+  </div>
+  <div class="columns">
+ <img src="graph6.jpg">  </div>
+
+  </div>
+</div>
+        
+ 
+      
+    </body>
+
+</body>
+
+</html>

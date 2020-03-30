@@ -1,0 +1,262 @@
+<html lang="en">
+  <head>
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>SDG6</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+        sectionimage {
+            background-image: url('https://cdn.shopify.com/s/files/1/1143/5524/files/clean-water_grande.jpg?5796659231253631405');
+        }
+        
+        /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.img {
+   border: 3.5px outset red;
+   background-color: lightgrey;
+   margin-right: 35px;
+   margin-left: 35px;
+ }
+    
+.left {
+    position: absolute;
+    left: 150px;
+    width: 900px;
+}
+
+.right {
+    position: absolute;
+    right: -350px;
+    width: 900px;
+}
+
+ .button {
+   background-color: #f44336;
+   border: 2.5px solid #CD5151;
+   color: white;
+   padding: 10px 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+
+.button:hover {
+  background-color: darkred;
+ }
+
+.flip-card {
+  background-color: transparent;
+  width:450px;
+  height:300px;
+  perspective: 1000px;
+align-items:"center";
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+align-items:"center";}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+align-items:"center";}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+align-items:"center";
+}
+
+.flip-card-back {
+  background-color: firebrick;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+align-items:"center";
+}
+
+.shadowimage {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+input[type=text], select {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+      
+
+  </head>
+  <body>
+      
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">This website is dedicated to informing the public of the importance of clean and accessible water for all. Areas like Sub-Saharan Africa have low rates of clean and affordable water leading to an increase in health risk</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Pages</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="about.html" class="text-white">About</a></li>
+            <li><a href="page3.html" class="text-white">Take Action</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+       
+        <strong>SDG6 Home</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+      <br><br><br>
+            <center><h1>Whats the Issue?</h1></center>
+      <br>
+      <center><p>A lack of clean and affordable water leads to health risks in the youth and elderly. Even healthy adults and teens are affected by dirty drinking water. Hundreds of thousands of deaths are caused every year due to dirty drinking water, and millions become sick and unable to provide for their family and community. </p></center>
+      <br>
+      <center><h1>How Can You Help?</h1></center>
+       <center><p>There are many ways to help support the cause! Hover over the images below to find out! The results range from donating to spreading knowledge on the topic!</p></center>
+      <div class ="left">
+      <br>
+  
+      <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">  
+                    <img src="https://cdn.clipart.email/945cc56dd41d166a0a25e7100f0ba76c_library-of-free-png-freeuse-stock-for-donations-png-files-_920-773.png" alt="donate" style="width:450px;height:300px;">
+                </div>
+                <div class="flip-card-back"style="width:450px;height:300px;">
+                    <h2>Donate</h2>
+                    <p>Donations, no matter how large, help fund the workers and charities that strive to provide clean and affordable water for all</p>
+                    
+                    <img src="https://webstockreview.net/images/clipart-money-7.png" width="150" height="75">
+                </div>
+            </div>
+        </div>
+      
+    
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src=" https://clipartart.com/images/picture-of-a-water-well-clipart-1.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Enroll</h1>
+      <p1>Look into, and Enroll into charity programs such as thewaterproject.org to build wells in Africa</p1>
+        <img src="https://d2e70e9yced57e.cloudfront.net/wallethub/posts/51406/how-to-build-credit-with-a-credit-card-%E2%80%93-top-tips.jpeg" width="150" height="75">
+    </div>
+  </div>
+</div>
+     </div>
+      
+        <div class ="right">
+      <br>
+  
+      <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">  
+                    <img src="https://webstockreview.net/images/fundraiser-clipart.jpg" alt="donate" style="width:450px;height:300px;">
+                </div>
+                <div class="flip-card-back"style="width:450px;height:300px;">
+                    <h2>Fundraise!</h2>
+                    <p>Fundraisers help gather support in your community and spread the word!</p>
+                    
+                    
+            </div>
+        </div>
+      
+    
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src=" https://lh3.googleusercontent.com/proxy/tIb4zpCRZxpQxZsSbjBPht9VrtvldBiQ2E_huGD4QdsW2AFj5EA4AKJHd8AoXpbNXPMLbDcF3mCETtz0jmDJfFC6" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Spread the Message</h1>
+      <p1>Spreading the word increases knowledge on the topic just like this Website! This will help gather support and increase funding for charitable projects!</p1>
+        <img src="https://media.istockphoto.com/vectors/going-viral-vector-id186929501?k=6&m=186929501&s=612x612&w=0&h=q58caJLsGB6Iga4-t6otWROVBiXmNOBxkbG0z186RtE=" width="150" height="75">
+                </div>
+    </div>
+  </div>
+</div>
+     </div>
+     
+      <center>
+      
+          
+    <a href="thewaterproject.org" class="button">Learn More</a>
+          
+      </center>
+      
+    </body>
+</html>
